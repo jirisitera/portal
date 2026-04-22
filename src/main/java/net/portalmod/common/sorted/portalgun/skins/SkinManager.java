@@ -273,9 +273,7 @@ public abstract class SkinManager {
     }
 
     public boolean playerHasSkin(UUID player, String skin) {
-        Set<String> skins = this.getPlayerSkins(player);
-        skins.add("default");
-        return skins.contains(skin);
+        return true;
     }
 
     public String getSelectedSkinForPlayer(UUID player) {
